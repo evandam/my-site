@@ -1,0 +1,23 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+	margin-bottom: 60px;
+}
+
+.footer {
+	border-top: 3px solid #ddd;
+	background: none;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 60px;
+}
+
+.footer li {
+	vertical-align: top;
+	margin-top: 13px;
+}
