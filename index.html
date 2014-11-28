@@ -13,7 +13,7 @@
 		<header class="navbar navbar-default navbar-static-top" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -23,21 +23,149 @@
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#home">Home</a></li>
-						<li><a href="#portfolio">Portfolio</a></li>
-					</ul>
-					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#about">About Me</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
 						<li><a href="#contact">Contact Me</a></li>
 					</ul>
 				</div>
 			</div>
 		</header>
 
-		<main role="main">
-			<div class="container">
-				<div class="page-header">
-					<h1> Hi. I'm Evan, and I like writing <code> code. </code> </h1>
+		<main role="main" class="container">			
+			<div class="page-header text-center"  id="about">
+				<h1> About Me </h1>
+			</div>
+			<div>
+				<div class="text-center">
+					<img src="img/profile.jpg" class="img-responsive img-circle profile inline">
+				</div>
+				<p class="lead">
+					I graduated from <a href="http://www.marist.edu/"><strong>Marist College</strong></a> in 2014, 
+					majoring in <strong>Computer Science</strong>
+					with a concentration in <strong>Game Design and Programming</strong> 
+					and a minor in <strong>Information Technology</strong>. 
+				</p>
+				<p class="lead">
+					I'm now a member of the <strong>Operations &amp; Technology Leadership Development Program</strong> at 
+					<a href="http://www.thehartford.com/"><strong>The Hartford</strong></a>.
+				</p>
+				
+				<ul>
+					<li>
+						I am a <strong>Server &amp; Storage Engineer</strong>, with work revolving around identifying and improving data for servers, as well as tracking them from build to decommission.
+						This provides great insight into corporate infrastructure, and how capacity is managed from both an IT and business perspective.
+					</li>
+					<li>
+						I am also working on a side project to create an app to be used by the O&amp;T LDP's recruiting team. The app has gone through an iterative process - beginning as a web app using <strong>Python</strong>
+						and <strong>Django</strong>. It is now being developed as a mobile application using <strong>PhoneGap</strong>, <strong>Bootstrap</strong>, <strong>jQuery</strong>, and <strong>Knockout.js</strong>
+					</li>
+				</ul>	
+			</div>
+			
+			<div class="page-header text-center"  id="portfolio">
+				<h1> Portfolio </h1>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="thumbnail">
+						<img src="img/poker.png" class="img-responsive" alt="poker">
+						<div class="caption">
+							<p class="lead">
+								An Android game of No-Limit Texas Hold'em, featuring a strong AI opponent.
+							</p>
+							<p>
+								The AI uses theories used in Poker including: pot odds, hand strength, and deception.
+								The opponent is also configurable to simulate different play styles.
+								This project was one of my first attempts of creating a multi-threaded application,
+								with the standard UI and main thread of Android, and the addition of a thread for the AI to 
+								perform it's calculations.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="thumbnail">
+						<img src="img/rubiks.png" class="img-responsive">
+						<div class="caption">
+							<p class="lead">
+								A Java application to solve a Rubik's Cube in the fewest possible moves,
+								and a WebGL application to display the solution.
+							</p>
+							<p>
+								The solver used IDA* Search as defined by <a href="https://www.cs.princeton.edu/courses/archive/fall06/cos402/papers/korfrubik.pdf"> Korf </a>.
+								This project posed countless challenges to implement an efficient algorithm in both time and space.
+							</p>
+							<p>
+								The project to create an animated and interactive WebGL application gave insight into the low-level workings and concepts of computer graphics.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="thumbnail">
+						<img src="img/chess.png" class="img-responsive">
+						<div class="caption">
+							<p class="lead">
+								A Chess-playing agent, and an accompanying WebGL visualizer of the games. 
+							</p>
+							<p>
+								The agent implemented a Minimax adversarial search with Alpha-Beta pruning to look ahead 6 moves, while keeping the clock in mind.
+								The game interacted with other players over a RESTful web server.
+								There were many interested challenges, including finding an accurate heuristic to represent the strength of making a move.
+							</p>
+							<p>
+								The WebGL application used three.js and dat-gui to handle user interaction. By polling the web server, games were played out in real-time.
+								This project took a deep dive into computer graphics concepts like using 3D models, camera movement, and even some particle effects.
+								Unfortunately, I no longer have this project to display.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="thumbnail">
+						<img src="img/os.png" class="img-responsive">
+						<div class="caption">
+							<p class="lead">
+								A JavaScript simulation of an operating system, using the HTML5 canvas.
+							</p>
+							<p>
+								This project included emulating a CPU in JavaScript and implementing an instruction set,
+								writing device drivers, a file system, and using various operating-system algorithms.
+							</p>
+							<p>
+								The OS features an interactive shell, multiple process-scheduling algorith, memory swapping,
+								and a persistent file system sitting on a virtual hard drive based on HTML5 localStorage.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="page-header text-center" id="contact">
+				<h1> Contact Me </h1>
+			</div>
+			<div class="row">	
+				<div class="col-sm-4">
+					<a href="http://www.linkedin.com/in/evanvandam">
+						<button type="button" class="btn btn-default btn-lg btn-contact">
+							<img src="img/linkedin.png" class="img-responsive inline" alt="LinkedIn Profile"> 
+							<span> Add me on LinkedIn </span>
+						</button>
+					</a>
+				</div>
+				<div class="col-sm-4">
+					<a href="https://github.com/evandam" target="new">
+						<button type="button" class="btn btn-default btn-lg btn-contact">
+							<img src="img/github.png" class="img-responsive inline" alt="GitHub Page"> Check out my GitHub
+						</button>
+					</a>
+				</div>
+				<div class="col-sm-4">
+					<a href="mailto:evandam92@gmail.com" target="new">
+						<button type="button" class="btn btn-default btn-lg btn">
+							<span class="glyphicon glyphicon-envelope"></span> Send me an email
+						</button>
+					</a>
 				</div>
 			</div>
 		</main>
@@ -45,21 +173,22 @@
 		<footer class="footer">
 			<div class="container">
 				<ul class="list-inline pull-right">
-					<li>
+					<li title="Send me an email!">
 						<a class="footer-text" href="mailto:evandam92@gmail.com">
 							<button type="button" class="btn btn-default">
 								<span class="glyphicon glyphicon-envelope"></span>
+								Email me
 							</button>
 						</a>
 					</li>
-					<li>
+					<li title="Take a look at my GitHub profile!">
 						<a href="https://github.com/evandam" target="new">
-							<img src="img/GitHub-Mark/GitHub-Mark-32px.png" class="img-responsive" alt="GitHub Page">
+							<img src="img/github.png" class="img-responsive" alt="GitHub Page">
 						</a>
 					</li>
-					<li>
+					<li title="Add me on LinkedIn!">
 						<a href="http://www.linkedin.com/in/evanvandam" target="new">
-							<img src="img/InBug-30px-R.png" class="img-responsive" alt="LinkedIn Profile">
+							<img src="img/linkedin.png" class="img-responsive" alt="LinkedIn Profile">
 						</a>
 					</li>
 				</ul>
