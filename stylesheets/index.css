@@ -1,0 +1,44 @@
+/* line 1, ../sass/index.scss */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* line 6, ../sass/index.scss */
+body {
+  margin-bottom: 60px;
+}
+
+/* line 10, ../sass/index.scss */
+.profile {
+  padding: 10px;
+  max-height: 120px;
+}
+
+/* line 15, ../sass/index.scss */
+.btn-contact {
+  height: 54px;
+  width: 100%;
+  margin: 5px;
+}
+
+/* line 21, ../sass/index.scss */
+.inline {
+  display: inline;
+}
+
+/* line 25, ../sass/index.scss */
+.footer {
+  border-top: 3px solid #e7e7e7;
+  background-color: #f8f8f8;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+}
+/* line 34, ../sass/index.scss */
+.footer li {
+  vertical-align: top;
+  margin-top: 13px;
+}

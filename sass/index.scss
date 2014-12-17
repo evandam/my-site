@@ -1,0 +1,38 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+	margin-bottom: 60px;
+}
+
+.profile {
+	padding: 10px;
+	max-height: 120px;
+}
+
+.btn-contact {
+	height: 54px;
+	width: 100%;
+	margin: 5px;
+}
+
+.inline {
+	display: inline;
+}
+
+.footer {
+	border-top: 3px solid #e7e7e7;
+	background-color: #f8f8f8;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 60px;
+
+	li {
+		vertical-align: top;
+		margin-top: 13px;
+	}
+}
