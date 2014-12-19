@@ -1,63 +1,80 @@
-/* line 2, ../sass/index.scss */
+/* line 8, ../sass/index.scss */
 html {
   position: relative;
   min-height: 100%;
 }
 
-/* line 7, ../sass/index.scss */
+/* line 13, ../sass/index.scss */
 body {
   padding-top: 40px;
   margin-bottom: 65px;
   background-color: black;
-  background: url(../img/background.png) repeat;
-  color: #aaa;
+  /*background: url(../img/background.png) repeat;*/
+  background: url(../img/minnewaska.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #fff;
 }
 
-/* line 15, ../sass/index.scss */
+/* line 25, ../sass/index.scss */
 h1 {
   color: white;
   text-align: center;
 }
 
-/* line 20, ../sass/index.scss */
+/* line 30, ../sass/index.scss */
 .navbar {
-  background: linear-gradient(#222, black);
+  background: -webkit-linear-gradient(#222, #000);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#222, #000);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#222, #000);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#222, #000);
+  /* Standard syntax */
 }
-/* line 26, ../sass/index.scss */
+/* line 33, ../sass/index.scss */
 .navbar a {
   color: white;
 }
-/* line 30, ../sass/index.scss */
+/* line 37, ../sass/index.scss */
 .navbar .navbar-toggle, .navbar .icon-bar {
   border: 1px solid white;
 }
 
-/* line 35, ../sass/index.scss */
+/* line 42, ../sass/index.scss */
 .profile {
   padding: 10px;
   max-height: 120px;
 }
 
-/* line 40, ../sass/index.scss */
+/* line 47, ../sass/index.scss */
 .page-header {
-  border: 1px solid #222;
   padding: 10px;
-  background: black;
+  background: -webkit-linear-gradient(rgba(1, 1, 1, 0.25), rgba(1, 1, 1, 0.75));
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(1, 1, 1, 0.25), rgba(1, 1, 1, 0.75));
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(1, 1, 1, 0.25), rgba(1, 1, 1, 0.75));
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(1, 1, 1, 0.25), rgba(1, 1, 1, 0.75));
+  /* Standard syntax */
 }
 
-/* line 46, ../sass/index.scss */
+/* line 55, ../sass/index.scss */
 .btn-contact {
   height: 54px;
   width: 100%;
   margin: 5px;
 }
 
-/* line 52, ../sass/index.scss */
+/* line 61, ../sass/index.scss */
 .inline {
   display: inline;
 }
 
-/* line 56, ../sass/index.scss */
+/* line 65, ../sass/index.scss */
 .footer {
   border-top: 3px solid #e7e7e7;
   background-color: #f8f8f8;
@@ -67,7 +84,7 @@ h1 {
   /* Set the fixed height of the footer here */
   height: 60px;
 }
-/* line 65, ../sass/index.scss */
+/* line 74, ../sass/index.scss */
 .footer li {
   vertical-align: top;
   margin-top: 13px;

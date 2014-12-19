@@ -1,6 +1,6 @@
 $(document).ready(function() {
-	// $(window).resize(resize);
-	// resize();
+	$(window).resize(resize);
+	resize();
 
 	// generate lorem ipsum dummy text
 	$('.ipsum').each(function() {
@@ -12,7 +12,8 @@ $(document).ready(function() {
 
 function resize() {
 	$('main > div').css('min-height',
-		$(window).height() - $('.navbar').height()
+		$(window).height() 
+		- $('.navbar').height() * 2
 	);
 }
 

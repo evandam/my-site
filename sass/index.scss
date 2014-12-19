@@ -1,3 +1,9 @@
+@mixin bg-gradient($start, $end) {
+	background: -webkit-linear-gradient($start, $end); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient($start, $end); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient($start, $end); /* For Firefox 3.6 to 15 */
+	background: linear-gradient($start, $end); /* Standard syntax */
+}
 
 html {
   position: relative;
@@ -8,8 +14,12 @@ body {
 	padding-top: 40px;
 	margin-bottom: 65px;
 	background-color: black;
-	background: url(../img/background.png) repeat;
-	color: #aaa;
+	/*background: url(../img/background.png) repeat;*/
+	background: url(../img/minnewaska.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	color: #fff;
 }
 
 h1 {
@@ -18,10 +28,7 @@ h1 {
 }
 
 .navbar {
-	background: linear-gradient(
-		#222,
-		black
-	);
+	@include bg-gradient(#222, #000);
 
 	a {
 		color: white;
@@ -38,9 +45,11 @@ h1 {
 }
 
 .page-header {
-	border: 1px solid #222;
 	padding: 10px;
-	background: black;
+	@include bg-gradient(
+		rgba(1,1,1,0.25), 
+		rgba(1,1,1,0.75)
+	);
 }
 
 .btn-contact {
