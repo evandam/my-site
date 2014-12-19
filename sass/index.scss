@@ -12,6 +12,11 @@ body {
 	color: #aaa;
 }
 
+h1 {
+	color: white;
+	text-align: center;
+}
+
 .navbar {
 	background: linear-gradient(
 		#222,
@@ -30,6 +35,12 @@ body {
 .profile {
 	padding: 10px;
 	max-height: 120px;
+}
+
+.page-header {
+	border: 1px solid #222;
+	padding: 10px;
+	background: black;
 }
 
 .btn-contact {
