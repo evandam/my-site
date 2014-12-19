@@ -1,33 +1,50 @@
-/* line 1, ../sass/index.scss */
+/* line 2, ../sass/index.scss */
 html {
   position: relative;
   min-height: 100%;
 }
 
-/* line 6, ../sass/index.scss */
+/* line 7, ../sass/index.scss */
 body {
-  margin-bottom: 60px;
+  padding-top: 40px;
+  margin-bottom: 65px;
+  background-color: black;
+  background: url(../img/background.png) repeat;
+  color: #aaa;
 }
 
-/* line 10, ../sass/index.scss */
+/* line 15, ../sass/index.scss */
+.navbar {
+  background: linear-gradient(#222, black);
+}
+/* line 21, ../sass/index.scss */
+.navbar a {
+  color: white;
+}
+/* line 25, ../sass/index.scss */
+.navbar .navbar-toggle, .navbar .icon-bar {
+  border: 1px solid white;
+}
+
+/* line 30, ../sass/index.scss */
 .profile {
   padding: 10px;
   max-height: 120px;
 }
 
-/* line 15, ../sass/index.scss */
+/* line 35, ../sass/index.scss */
 .btn-contact {
   height: 54px;
   width: 100%;
   margin: 5px;
 }
 
-/* line 21, ../sass/index.scss */
+/* line 41, ../sass/index.scss */
 .inline {
   display: inline;
 }
 
-/* line 25, ../sass/index.scss */
+/* line 45, ../sass/index.scss */
 .footer {
   border-top: 3px solid #e7e7e7;
   background-color: #f8f8f8;
@@ -37,7 +54,7 @@ body {
   /* Set the fixed height of the footer here */
   height: 60px;
 }
-/* line 34, ../sass/index.scss */
+/* line 54, ../sass/index.scss */
 .footer li {
   vertical-align: top;
   margin-top: 13px;

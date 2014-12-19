@@ -10,7 +10,7 @@
 	</head>
 	
 	<body>	
-		<header class="navbar navbar-default navbar-static-top" role="navigation">
+		<header class="navbar navbar-fixed-top" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -19,7 +19,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand text-uppercase" href="#"> Evan Van Dam </a>
+					<a class="navbar-brand" href="#"><strong> EVAN VAN DAM </strong></a>
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
@@ -32,10 +32,8 @@
 		</header>
 
 		<main role="main" class="container">			
-			<div class="page-header text-center"  id="about">
+			<div class="page-header" id="about">
 				<h1> About Me </h1>
-			</div>
-			<div>
 				<div class="text-center">
 					<img src="img/profile.jpg" class="img-responsive img-circle profile inline">
 				</div>
@@ -67,136 +65,117 @@
 				</p>
 			</div>
 			
-			<div class="page-header text-center"  id="portfolio">
+			<div class="page-header" id="portfolio">
 				<h1> Portfolio </h1>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="thumbnail">
-						<img src="img/poker.png" class="img-responsive" alt="poker">
-						<div class="caption">
-							<p class="lead">
-								An Android game of No-Limit Texas Hold'em, featuring a strong AI opponent.
-							</p>
-							<p>
-								The AI uses theories used in Poker including: pot odds, hand strength, and deception.
-								The opponent is also configurable to simulate different play styles.
-								This project was one of my first attempts of creating a multi-threaded application,
-								with the standard UI and main thread of Android, and the addition of a thread for the AI to 
-								perform it's calculations.
-							</p>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="thumbnail">
+							<img src="img/poker.png" class="img-responsive" alt="poker">
+							<div class="caption">
+								<p class="lead">
+									An Android game of No-Limit Texas Hold'em, featuring a strong AI opponent.
+								</p>
+								<p>
+									The AI uses theories used in Poker including: pot odds, hand strength, and deception.
+									The opponent is also configurable to simulate different play styles.
+									This project was one of my first attempts of creating a multi-threaded application,
+									with the standard UI and main thread of Android, and the addition of a thread for the AI to 
+									perform it's calculations.
+								</p>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="thumbnail">
-						<img src="img/rubiks.png" class="img-responsive">
-						<div class="caption">
-							<p class="lead">
-								A Java application to solve a Rubik's Cube in the fewest possible moves,
-								and a WebGL application to display the solution.
-							</p>
-							<p>
-								The solver used IDA* Search as defined by <a href="https://www.cs.princeton.edu/courses/archive/fall06/cos402/papers/korfrubik.pdf"> Korf </a>.
-								This project posed countless challenges to implement an efficient algorithm in both time and space.
-							</p>
-							<p>
-								The project to create an animated and interactive WebGL application gave insight into the low-level workings and concepts of computer graphics.
-							</p>
+					<div class="col-md-6">
+						<div class="thumbnail">
+							<img src="img/rubiks.png" class="img-responsive">
+							<div class="caption">
+								<p class="lead">
+									A Java application to solve a Rubik's Cube in the fewest possible moves,
+									and a WebGL application to display the solution.
+								</p>
+								<p>
+									The solver used IDA* Search as defined by <a href="https://www.cs.princeton.edu/courses/archive/fall06/cos402/papers/korfrubik.pdf"> Korf </a>.
+									This project posed countless challenges to implement an efficient algorithm in both time and space.
+								</p>
+								<p>
+									The project to create an animated and interactive WebGL application gave insight into the low-level workings and concepts of computer graphics.
+								</p>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="thumbnail">
-						<img src="img/chess.png" class="img-responsive">
-						<div class="caption">
-							<p class="lead">
-								A Chess-playing agent, and an accompanying WebGL visualizer of the games. 
-							</p>
-							<p>
-								The agent implemented a Minimax adversarial search with Alpha-Beta pruning to look ahead 6 moves, while keeping the clock in mind.
-								The game interacted with other players over a RESTful web server.
-								There were many interested challenges, including finding an accurate heuristic to represent the strength of making a move.
-							</p>
-							<p>
-								The WebGL application used three.js and dat-gui to handle user interaction. By polling the web server, games were played out in real-time.
-								This project took a deep dive into computer graphics concepts like using 3D models, camera movement, and even some particle effects.
-								Unfortunately, I no longer have this project to display.
-							</p>
+					<div class="col-md-6">
+						<div class="thumbnail">
+							<img src="img/chess.png" class="img-responsive">
+							<div class="caption">
+								<p class="lead">
+									A Chess-playing agent, and an accompanying WebGL visualizer of the games. 
+								</p>
+								<p>
+									The agent implemented a Minimax adversarial search with Alpha-Beta pruning to look ahead 6 moves, while keeping the clock in mind.
+									The game interacted with other players over a RESTful web server.
+									There were many interested challenges, including finding an accurate heuristic to represent the strength of making a move.
+								</p>
+								<p>
+									The WebGL application used three.js and dat-gui to handle user interaction. By polling the web server, games were played out in real-time.
+									This project took a deep dive into computer graphics concepts like using 3D models, camera movement, and even some particle effects.
+									Unfortunately, I no longer have this project to display.
+								</p>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="thumbnail">
-						<img src="img/os.png" class="img-responsive">
-						<div class="caption">
-							<p class="lead">
-								A JavaScript simulation of an operating system, using the HTML5 canvas.
-							</p>
-							<p>
-								This project included emulating a CPU in JavaScript and implementing an instruction set,
-								writing device drivers, a file system, and using various operating-system algorithms.
-							</p>
-							<p>
-								The OS features an interactive shell, multiple process-scheduling algorith, memory swapping,
-								and a persistent file system sitting on a virtual hard drive based on HTML5 localStorage.
-							</p>
+					<div class="col-md-6">
+						<div class="thumbnail">
+							<img src="img/os.png" class="img-responsive">
+							<div class="caption">
+								<p class="lead">
+									A JavaScript simulation of an operating system, using the HTML5 canvas.
+								</p>
+								<p>
+									This project included emulating a CPU in JavaScript and implementing an instruction set,
+									writing device drivers, a file system, and using various operating-system algorithms.
+								</p>
+								<p>
+									The OS features an interactive shell, multiple process-scheduling algorith, memory swapping,
+									and a persistent file system sitting on a virtual hard drive based on HTML5 localStorage.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			
-			<div class="page-header text-center" id="contact">
+			<div class="page-header" id="contact">
 				<h1> Contact Me </h1>
-			</div>
-			<div class="row">	
-				<div class="col-sm-4">
-					<a href="http://www.linkedin.com/in/evanvandam">
-						<button type="button" class="btn btn-default btn-lg btn-contact">
-							<img src="img/linkedin.png" class="img-responsive inline" alt="LinkedIn Profile"> 
-							<span> Add me on LinkedIn </span>
-						</button>
-					</a>
-				</div>
-				<div class="col-sm-4">
-					<a href="https://github.com/evandam" target="new">
-						<button type="button" class="btn btn-default btn-lg btn-contact">
-							<img src="img/github.png" class="img-responsive inline" alt="GitHub Page"> Check out my GitHub
-						</button>
-					</a>
-				</div>
-				<div class="col-sm-4">
-					<a href="mailto:evandam92@gmail.com">
-						<button type="button" class="btn btn-default btn-lg btn-contact">
-							<span class="glyphicon glyphicon-envelope"></span> Send me an email
-						</button>
-					</a>
+				<div class="row">	
+					<div class="col-sm-4">
+						<a href="http://www.linkedin.com/in/evanvandam">
+							<button type="button" class="btn btn-default btn-lg btn-contact">
+								<img src="img/linkedin.png" class="img-responsive inline" alt="LinkedIn Profile"> 
+								<span> Add me on LinkedIn </span>
+							</button>
+						</a>
+					</div>
+					<div class="col-sm-4">
+						<a href="https://github.com/evandam" target="new">
+							<button type="button" class="btn btn-default btn-lg btn-contact">
+								<img src="img/github.png" class="img-responsive inline" alt="GitHub Page"> Check out my GitHub
+							</button>
+						</a>
+					</div>
+					<div class="col-sm-4">
+						<a href="mailto:evandam92@gmail.com">
+							<button type="button" class="btn btn-default btn-lg btn-contact">
+								<span class="glyphicon glyphicon-envelope"></span> Send me an email
+							</button>
+						</a>
+					</div>
 				</div>
 			</div>
 		</main>
 		
 		<footer class="footer">
 			<div class="container">
-				<ul class="list-inline pull-right">
-					<li title="Send me an email!">
-						<a class="footer-text" href="mailto:evandam92@gmail.com">
-							<button type="button" class="btn btn-default">
-								<span class="glyphicon glyphicon-envelope"></span>
-								Email me
-							</button>
-						</a>
-					</li>
-					<li title="Take a look at my GitHub profile!">
-						<a href="https://github.com/evandam" target="new">
-							<img src="img/github.png" class="img-responsive" alt="GitHub Page">
-						</a>
-					</li>
-					<li title="Add me on LinkedIn!">
-						<a href="http://www.linkedin.com/in/evanvandam" target="new">
-							<img src="img/linkedin.png" class="img-responsive" alt="LinkedIn Profile">
-						</a>
-					</li>
-				</ul>
+				
 			</div>
 		</footer>
 	</body>
