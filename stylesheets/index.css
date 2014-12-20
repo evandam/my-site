@@ -1,57 +1,41 @@
-/* line 8, ../sass/index.scss */
+/* line 10, ../sass/index.scss */
 html {
   position: relative;
   min-height: 100%;
 }
 
-/* line 13, ../sass/index.scss */
+/* line 15, ../sass/index.scss */
 body {
-  padding-top: 40px;
   margin-bottom: 65px;
   background-color: black;
   /*background: url(../img/background.png) repeat;*/
   background: url(../img/minnewaska.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   color: #fff;
 }
 
-/* line 25, ../sass/index.scss */
+/* line 26, ../sass/index.scss */
 h1 {
-  color: white;
+  color: #fff;
   text-align: center;
 }
 
-/* line 30, ../sass/index.scss */
-.navbar {
-  background: -webkit-linear-gradient(#222, #000);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#222, #000);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#222, #000);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#222, #000);
-  /* Standard syntax */
-}
-/* line 33, ../sass/index.scss */
-.navbar a {
+/* line 31, ../sass/index.scss */
+a {
   color: white;
 }
-/* line 37, ../sass/index.scss */
-.navbar .navbar-toggle, .navbar .icon-bar {
-  border: 1px solid white;
+
+/* line 35, ../sass/index.scss */
+.navbar-fixed-top {
+  background-color: #000;
 }
 
-/* line 42, ../sass/index.scss */
-.profile {
-  padding: 10px;
-  max-height: 120px;
-}
-
-/* line 47, ../sass/index.scss */
-.page-header {
-  padding: 10px;
+/* line 39, ../sass/index.scss */
+.navbar-top {
+  margin-top: 10px;
+  margin-bottom: 0;
   background: -webkit-linear-gradient(rgba(1, 1, 1, 0.25), rgba(1, 1, 1, 0.75));
   /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(rgba(1, 1, 1, 0.25), rgba(1, 1, 1, 0.75));
@@ -62,29 +46,90 @@ h1 {
   /* Standard syntax */
 }
 
-/* line 55, ../sass/index.scss */
+/* line 49, ../sass/index.scss */
+.navbar a {
+  color: #fff;
+}
+/* line 53, ../sass/index.scss */
+.navbar .icon-bar {
+  border: 1px solid #fff;
+}
+/* line 57, ../sass/index.scss */
+.navbar .navbar-toggle:hover {
+  background-color: #fff;
+}
+/* line 59, ../sass/index.scss */
+.navbar .navbar-toggle:hover .icon-bar {
+  border-color: #000;
+}
+/* line 64, ../sass/index.scss */
+.navbar li a:hover {
+  background-color: rgba(1, 1, 1, 0.5);
+}
+
+/* line 69, ../sass/index.scss */
+.profile {
+  padding: 10px;
+  max-height: 120px;
+}
+
+/* line 74, ../sass/index.scss */
+.section {
+  border: none;
+  padding: 10px;
+  margin: 20px 0;
+  background: -webkit-linear-gradient(rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.75));
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.75));
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.75));
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.75));
+  /* Standard syntax */
+}
+
+/* line 84, ../sass/index.scss */
+.thumbnail {
+  background: none;
+}
+/* line 86, ../sass/index.scss */
+.thumbnail .caption {
+  color: #ddd;
+}
+/* line 88, ../sass/index.scss */
+.thumbnail .caption .lead {
+  color: white;
+}
+
+/* line 94, ../sass/index.scss */
 .btn-contact {
   height: 54px;
   width: 100%;
   margin: 5px;
 }
 
-/* line 61, ../sass/index.scss */
+/* line 100, ../sass/index.scss */
 .inline {
   display: inline;
 }
 
-/* line 65, ../sass/index.scss */
+/* line 104, ../sass/index.scss */
 .footer {
-  border-top: 3px solid #e7e7e7;
-  background-color: #f8f8f8;
+  background: -webkit-linear-gradient(rgba(1, 1, 1, 0.9), rgba(1, 1, 1, 0.6));
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(1, 1, 1, 0.9), rgba(1, 1, 1, 0.6));
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(1, 1, 1, 0.9), rgba(1, 1, 1, 0.6));
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(1, 1, 1, 0.9), rgba(1, 1, 1, 0.6));
+  /* Standard syntax */
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
 }
-/* line 74, ../sass/index.scss */
+/* line 115, ../sass/index.scss */
 .footer li {
   vertical-align: top;
   margin-top: 13px;

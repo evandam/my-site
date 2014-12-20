@@ -1,3 +1,5 @@
+$primary-color: #070;
+
 @mixin bg-gradient($start, $end) {
 	background: -webkit-linear-gradient($start, $end); /* For Safari 5.1 to 6.0 */
 	background: -o-linear-gradient($start, $end); /* For Opera 11.1 to 12.0 */
@@ -11,31 +13,56 @@ html {
 }
 
 body {
-	padding-top: 40px;
 	margin-bottom: 65px;
 	background-color: black;
 	/*background: url(../img/background.png) repeat;*/
 	background: url(../img/minnewaska.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: cover;
 	color: #fff;
 }
 
 h1 {
-	color: white;
+	color: #fff;
 	text-align: center;
 }
 
-.navbar {
-	@include bg-gradient(#222, #000);
+a {
+	color: white;
+}
 
+.navbar-fixed-top {
+	background-color: #000;
+}
+
+.navbar-top {
+	margin-top: 10px;
+	margin-bottom: 0;
+	@include bg-gradient(
+		rgba(1,1,1,0.25),
+		rgba(1,1,1,0.75)
+	);
+}
+
+.navbar {
 	a {
-		color: white;
+		color: #fff;
 	}
 
-	.navbar-toggle, .icon-bar {
-		border: 1px solid white;
+	.icon-bar {
+		border: 1px solid #fff;
+	}
+
+	.navbar-toggle:hover {
+		background-color: #fff;
+		.icon-bar {
+			border-color: #000;
+		}
+	}
+
+	li a:hover {
+		background-color: rgba(1,1,1,0.5);
 	}
 }
 
@@ -44,12 +71,24 @@ h1 {
 	max-height: 120px;
 }
 
-.page-header {
+.section {
+	border: none;
 	padding: 10px;
+	margin: 20px 0;
 	@include bg-gradient(
-		rgba(1,1,1,0.25), 
+		rgba(1,1,1,0.4), 
 		rgba(1,1,1,0.75)
 	);
+}
+
+.thumbnail{
+	background: none;
+	.caption {
+		color: #ddd;
+		.lead {
+			color: white;
+		}
+	}
 }
 
 .btn-contact {
@@ -63,8 +102,10 @@ h1 {
 }
 
 .footer {
-	border-top: 3px solid #e7e7e7;
-	background-color: #f8f8f8;
+	@include bg-gradient(
+		rgba(1,1,1,0.9), 
+		rgba(1,1,1,0.6)
+	);
 	position: absolute;
 	bottom: 0;
 	width: 100%;
