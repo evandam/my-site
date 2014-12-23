@@ -1,9 +1,4 @@
-var navHeight, navScrollPos;
-
 $(document).ready(function() {
-	// set vars used in callback functions to avoid recalcing
-	navScrollPos = $('.section:first').position().top;
-	navHeight = $('.navbar').height();
 	// setup callbacks
 	$(window).resize(resize);
 	$(window).scroll(scroll);
@@ -14,7 +9,6 @@ $(document).ready(function() {
 		$('.navbar-collapse').collapse('hide');
 	});
 
-
 	// generate dummy text
 	$('.ipsum').each(function() {
 		lorem_ipsum(this, $(this).attr('ipsum-paras'));
@@ -24,19 +18,16 @@ $(document).ready(function() {
 });
 
 function resize(evt) {
-	$('.section').css('min-height',
-		$(window).height() 
-		- navHeight * 2
-	);
+	$('.section').css('min-height', $(window).height() - 80);
 }
 
 function scroll(evt) {
-	console.log(evt);
-	if($(window).scrollTop() > navScrollPos) {
-		if($('.navbar').hasClass('navbar-top'))
-			$('.navbar').removeClass('navbar-top').addClass('navbar-fixed-top');
-	} else if($('.navbar').hasClass('navbar-fixed-top'))
-		$('.navbar').removeClass('navbar-fixed-top').addClass('navbar-top');
+	console.log($(window).scrollTop());
+	if($(window).scrollTop() > 0) {
+		if($('.navbar').hasClass('navbar-at-top'))
+			$('.navbar').removeClass('navbar-at-top');
+	} else if(!$('.navbar').hasClass('navbar-at-top'))
+		$('.navbar').addClass('navbar-at-top');
 }
 
 function autoRefresh(interval) {

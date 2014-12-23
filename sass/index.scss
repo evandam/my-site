@@ -13,6 +13,7 @@ html {
 }
 
 body {
+	margin-top: 50px;
 	margin-bottom: 65px;
 	background-color: black;
 	/*background: url(../img/background.png) repeat;*/
@@ -36,9 +37,7 @@ a {
 	background-color: #000;
 }
 
-.navbar-top {
-	margin-top: 10px;
-	margin-bottom: 0;
+.navbar-at-top {
 	@include bg-gradient(
 		rgba(1,1,1,0.25),
 		rgba(1,1,1,0.75)
@@ -64,6 +63,11 @@ a {
 	li a:hover {
 		background-color: rgba(1,1,1,0.5);
 	}
+}
+
+.permalink {
+	position: relative;
+	top: -70px;
 }
 
 .profile {

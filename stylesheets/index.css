@@ -6,6 +6,7 @@ html {
 
 /* line 15, ../sass/index.scss */
 body {
+  margin-top: 50px;
   margin-bottom: 65px;
   background-color: black;
   /*background: url(../img/background.png) repeat;*/
@@ -16,26 +17,24 @@ body {
   color: #fff;
 }
 
-/* line 26, ../sass/index.scss */
+/* line 27, ../sass/index.scss */
 h1 {
   color: #fff;
   text-align: center;
 }
 
-/* line 31, ../sass/index.scss */
+/* line 32, ../sass/index.scss */
 a {
   color: white;
 }
 
-/* line 35, ../sass/index.scss */
+/* line 36, ../sass/index.scss */
 .navbar-fixed-top {
   background-color: #000;
 }
 
-/* line 39, ../sass/index.scss */
-.navbar-top {
-  margin-top: 10px;
-  margin-bottom: 0;
+/* line 40, ../sass/index.scss */
+.navbar-at-top {
   background: -webkit-linear-gradient(rgba(1, 1, 1, 0.25), rgba(1, 1, 1, 0.75));
   /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(rgba(1, 1, 1, 0.25), rgba(1, 1, 1, 0.75));
@@ -46,34 +45,40 @@ a {
   /* Standard syntax */
 }
 
-/* line 49, ../sass/index.scss */
+/* line 48, ../sass/index.scss */
 .navbar a {
   color: #fff;
 }
-/* line 53, ../sass/index.scss */
+/* line 52, ../sass/index.scss */
 .navbar .icon-bar {
   border: 1px solid #fff;
 }
-/* line 57, ../sass/index.scss */
+/* line 56, ../sass/index.scss */
 .navbar .navbar-toggle:hover {
   background-color: #fff;
 }
-/* line 59, ../sass/index.scss */
+/* line 58, ../sass/index.scss */
 .navbar .navbar-toggle:hover .icon-bar {
   border-color: #000;
 }
-/* line 64, ../sass/index.scss */
+/* line 63, ../sass/index.scss */
 .navbar li a:hover {
   background-color: rgba(1, 1, 1, 0.5);
 }
 
-/* line 69, ../sass/index.scss */
+/* line 68, ../sass/index.scss */
+.permalink {
+  position: relative;
+  top: -70px;
+}
+
+/* line 73, ../sass/index.scss */
 .profile {
   padding: 10px;
   max-height: 120px;
 }
 
-/* line 74, ../sass/index.scss */
+/* line 78, ../sass/index.scss */
 .section {
   border: none;
   padding: 10px;
@@ -88,32 +93,32 @@ a {
   /* Standard syntax */
 }
 
-/* line 84, ../sass/index.scss */
+/* line 88, ../sass/index.scss */
 .thumbnail {
   background: none;
 }
-/* line 86, ../sass/index.scss */
+/* line 90, ../sass/index.scss */
 .thumbnail .caption {
   color: #ddd;
 }
-/* line 88, ../sass/index.scss */
+/* line 92, ../sass/index.scss */
 .thumbnail .caption .lead {
   color: white;
 }
 
-/* line 94, ../sass/index.scss */
+/* line 98, ../sass/index.scss */
 .btn-contact {
   height: 54px;
   width: 100%;
   margin: 5px;
 }
 
-/* line 100, ../sass/index.scss */
+/* line 104, ../sass/index.scss */
 .inline {
   display: inline;
 }
 
-/* line 104, ../sass/index.scss */
+/* line 108, ../sass/index.scss */
 .footer {
   background: -webkit-linear-gradient(rgba(1, 1, 1, 0.9), rgba(1, 1, 1, 0.6));
   /* For Safari 5.1 to 6.0 */
@@ -129,7 +134,7 @@ a {
   /* Set the fixed height of the footer here */
   height: 60px;
 }
-/* line 115, ../sass/index.scss */
+/* line 119, ../sass/index.scss */
 .footer li {
   vertical-align: top;
   margin-top: 13px;
