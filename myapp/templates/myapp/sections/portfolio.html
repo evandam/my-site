@@ -1,0 +1,75 @@
+<div class="row">
+	<div class="col-md-5">
+		<div class="thumbnail">
+			<img src="static/myapp/img/poker.png" class="img-responsive" alt="poker">
+			<div class="caption">
+				<p class="lead">
+					An Android game of No-Limit Texas Hold'em, featuring a strong AI opponent.
+				</p>
+				<p>
+					The AI uses theories used in Poker including: pot odds, hand strength, and deception.
+					The opponent is also configurable to simulate different play styles.
+					This project was one of my first attempts of creating a multi-threaded application,
+					with the standard UI and main thread of Android, and the addition of a thread for the AI to 
+					perform it's calculations.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-5">
+		<div class="thumbnail">
+			<img src="static/myapp/img/rubiks.png" class="img-responsive">
+			<div class="caption">
+				<p class="lead">
+					A Java application to solve a Rubik's Cube in the fewest possible moves,
+					and a WebGL application to display the solution.
+				</p>
+				<p>
+					The solver used IDA* Search as defined by <a href="https://www.cs.princeton.edu/courses/archive/fall06/cos402/papers/korfrubik.pdf"> Korf </a>.
+					This project posed countless challenges to implement an efficient algorithm in both time and space.
+				</p>
+				<p>
+					The project to create an animated and interactive WebGL application gave insight into the low-level workings and concepts of computer graphics.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-5">
+		<div class="thumbnail">
+			<img src="static/myapp/img/chess.png" class="img-responsive">
+			<div class="caption">
+				<p class="lead">
+					A Chess-playing agent, and an accompanying WebGL visualizer of the games. 
+				</p>
+				<p>
+					The agent implemented a Minimax adversarial search with Alpha-Beta pruning to look ahead 6 moves, while keeping the clock in mind.
+					The game interacted with other players over a RESTful web server.
+					There were many interested challenges, including finding an accurate heuristic to represent the strength of making a move.
+				</p>
+				<p>
+					The WebGL application used three.js and dat-gui to handle user interaction. By polling the web server, games were played out in real-time.
+					This project took a deep dive into computer graphics concepts like using 3D models, camera movement, and even some particle effects.
+					Unfortunately, I no longer have this project to display.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-5">
+		<div class="thumbnail">
+			<img src="static/myapp/img/os.png" class="img-responsive">
+			<div class="caption">
+				<p class="lead">
+					A JavaScript simulation of an operating system, using the HTML5 canvas.
+				</p>
+				<p>
+					This project included emulating a CPU in JavaScript and implementing an instruction set,
+					writing device drivers, a file system, and using various operating-system algorithms.
+				</p>
+				<p>
+					The OS features an interactive shell, multiple process-scheduling algorith, memory swapping,
+					and a persistent file system sitting on a virtual hard drive based on HTML5 localStorage.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
