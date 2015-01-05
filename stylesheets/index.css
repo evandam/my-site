@@ -1,15 +1,13 @@
-/* line 10, ../sass/index.scss */
+/* line 8, ../sass/index.scss */
 html {
   position: relative;
   min-height: 100%;
 }
 
-/* line 15, ../sass/index.scss */
+/* line 13, ../sass/index.scss */
 body {
   margin-top: 50px;
-  margin-bottom: 65px;
   background-color: black;
-  /*background: url(../img/background.png) repeat;*/
   background: url(../img/minnewaska.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -17,23 +15,23 @@ body {
   color: #fff;
 }
 
-/* line 27, ../sass/index.scss */
+/* line 23, ../sass/index.scss */
 h1 {
   color: #fff;
   text-align: center;
 }
 
-/* line 32, ../sass/index.scss */
+/* line 28, ../sass/index.scss */
 a {
   color: white;
 }
 
-/* line 36, ../sass/index.scss */
+/* line 32, ../sass/index.scss */
 .navbar-fixed-top {
   background-color: #000;
 }
 
-/* line 40, ../sass/index.scss */
+/* line 36, ../sass/index.scss */
 .navbar-at-top {
   background: -webkit-linear-gradient(rgba(1, 1, 1, 0.25), rgba(1, 1, 1, 0.75));
   /* For Safari 5.1 to 6.0 */
@@ -45,40 +43,41 @@ a {
   /* Standard syntax */
 }
 
-/* line 48, ../sass/index.scss */
+/* line 44, ../sass/index.scss */
 .navbar a {
   color: #fff;
 }
-/* line 52, ../sass/index.scss */
+/* line 48, ../sass/index.scss */
 .navbar .icon-bar {
   border: 1px solid #fff;
 }
-/* line 56, ../sass/index.scss */
+/* line 52, ../sass/index.scss */
 .navbar .navbar-toggle:hover {
   background-color: #fff;
 }
-/* line 58, ../sass/index.scss */
+/* line 54, ../sass/index.scss */
 .navbar .navbar-toggle:hover .icon-bar {
   border-color: #000;
 }
-/* line 63, ../sass/index.scss */
+/* line 59, ../sass/index.scss */
 .navbar li a:hover {
   background-color: rgba(1, 1, 1, 0.5);
 }
 
-/* line 68, ../sass/index.scss */
+/* line 64, ../sass/index.scss */
 .permalink {
   position: relative;
   top: -70px;
+  display: block;
 }
 
-/* line 73, ../sass/index.scss */
+/* line 70, ../sass/index.scss */
 .profile {
   padding: 10px;
   max-height: 120px;
 }
 
-/* line 78, ../sass/index.scss */
+/* line 75, ../sass/index.scss */
 .section {
   border: none;
   padding: 10px;
@@ -93,32 +92,31 @@ a {
   /* Standard syntax */
 }
 
-/* line 88, ../sass/index.scss */
+/* line 85, ../sass/index.scss */
 .thumbnail {
   background: none;
 }
-/* line 90, ../sass/index.scss */
+/* line 87, ../sass/index.scss */
 .thumbnail .caption {
   color: #ddd;
 }
-/* line 92, ../sass/index.scss */
+/* line 89, ../sass/index.scss */
 .thumbnail .caption .lead {
   color: white;
 }
 
-/* line 98, ../sass/index.scss */
+/* line 95, ../sass/index.scss */
 .btn-contact {
-  height: 54px;
-  width: 100%;
-  margin: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-/* line 104, ../sass/index.scss */
+/* line 100, ../sass/index.scss */
 .inline {
   display: inline;
 }
 
-/* line 108, ../sass/index.scss */
+/* line 104, ../sass/index.scss */
 .footer {
   background: -webkit-linear-gradient(rgba(1, 1, 1, 0.9), rgba(1, 1, 1, 0.6));
   /* For Safari 5.1 to 6.0 */
@@ -134,7 +132,7 @@ a {
   /* Set the fixed height of the footer here */
   height: 60px;
 }
-/* line 119, ../sass/index.scss */
+/* line 115, ../sass/index.scss */
 .footer li {
   vertical-align: top;
   margin-top: 13px;
