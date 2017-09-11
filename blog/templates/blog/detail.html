@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+  <section class="section">
+    <h1 class="title is-capitalized">{{post.title}}</h1>
+    <h2 class="subtitle">{{post.publish_date}}</h2>
+    <div class="content">
+      {{post.body | safe}}
+    </div>
+  </section>
+  <hr>
+  <section class="section">
+    <h2 class="subtitle">Comments</h2>
+    {% if comments %}
+      {% for comment in comments %}
+        <div class="box content">
+          <p>{{comment.message}}</p>
+          <strong>{{comment.email}}</strong>
+          <span> - </span>
+          <small>{{comment.publish_date}}</small>
+        </div>
+      {% endfor %}
+    {% else %}
+      <p>There aren't any comments yet.</p>
+    {% endif %}
+  </section>
+  <section class="section">
+    <h2 class="subtitle">Leave a comment!</h2>
+    <form method="post" action="{% url 'detail' post.id %}">
+      {% include 'form.html' with form=comment_form %}
+    </form>
+  </section>
+{% endblock %}

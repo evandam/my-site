@@ -1,14 +1,20 @@
 {% extends 'base.html' %}
 {% block content %}
+  <h1 class="title">Welcome to my Blog!</h1>
+  <div class="content">
+    <p>
+      I like to post about new tips and tricks I find, experiences with frameworks,
+      and news going on in tech.
+    </p>
+  </div>
   {% for post in posts %}
     <div class="box">
       <p>
-        <h1 class="title">{{post.title}}</h1>
+        <h1 class="title">
+          <a href="/blog/{{post.id}}">{{post.title}}</a>
+        </h1>
         <h2 class="subtitle">{{post.publish_date}}</h2>
       </p>
-      <div>
-        {{post.body | safe}}
-      </div>
     </div>
   {% endfor %}
 {% endblock %}
