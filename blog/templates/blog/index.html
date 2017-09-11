@@ -7,7 +7,7 @@
         <h2 class="subtitle">{{post.publish_date}}</h2>
       </p>
       <div>
-        {{post | safe}}
+        {{post.body | safe}}
       </div>
     </div>
   {% endfor %}
