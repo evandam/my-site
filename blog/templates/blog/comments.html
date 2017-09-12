@@ -1,0 +1,13 @@
+{% load blog_extras %}
+{% if comments %}
+  {% for comment in comments %}
+    <div class="box content">
+      <p>{{comment.message | markdown | safe}}</p>
+      <strong>{{comment.name}}</strong>
+      <span> - </span>
+      <small>{{comment.publish_date | timeago}}</small>
+    </div>
+  {% endfor %}
+{% else %}
+  <p>There aren't any comments yet.</p>
+{% endif %}

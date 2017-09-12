@@ -13,7 +13,7 @@
         <h1 class="title">
           <a href="/blog/{{post.id}}">{{post.title}}</a>
         </h1>
-        <h2 class="subtitle">{{post.publish_date}}</h2>
+        <h2 class="subtitle">{{post.publish_date | timeago}}</h2>
       </p>
     </div>
   {% endfor %}

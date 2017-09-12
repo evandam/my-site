@@ -1,0 +1,16 @@
+<div class="field">
+  {% if not field.is_hidden %}
+    <label for="{{field.id_for_label}}" class="label">
+      {{field.label}}
+      {% if field.help_text %}
+        - <small>{{field.help_text}}</small>
+      {% endif %}
+    </label>
+  {% endif %}
+  <div class="control">
+    {{field}}
+    {% for error in field.errors %}
+      <p class="help is-danger">{{error}}</p>
+    {% endfor %}
+  </div>
+</div>
