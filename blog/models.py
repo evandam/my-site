@@ -19,7 +19,7 @@ class Comment(models.Model):
 
      def __str__(self):
          return 'Comment(author={}, post={}, date={})'.format(
-            self.author, self.post, self.publish_date
+            self.name, self.post, self.publish_date
          )
 
 class BaseForm(forms.ModelForm):
