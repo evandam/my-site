@@ -12,13 +12,7 @@
   </head>
   <body>
     {% include 'navbar.html' %}
-    <section class="section">
-      <div class="container">
-        <div>
-          {% block content %}{% endblock %}
-        </div>
-      </div>
-    </section>
+    {% block content %}{% endblock %}
     {% include 'footer.html' %}
   </body>
   <script src="/static/js/main.js"></script>
