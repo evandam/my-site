@@ -5,15 +5,16 @@ html, body {
 }
 
 .title {
-  color: #ECECEC;
+  color: white;
 }
 
 .navbar {
   background-color: black;
+  box-shadow: 0 5px 5px #111;
 }
 
 .navbar-item, a.navbar-item:hover {
-  color: #0082AF;
+  color: #1EA59F;
 }
 
 a.navbar-item:hover {
@@ -23,7 +24,7 @@ a.navbar-item:hover {
 body > section {
   height: 100%;
   width: 100%;
-  border: 1px solid gray;
+  /*border: 1px solid gray;*/
 }
 
 .profile {
