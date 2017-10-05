@@ -1,0 +1,20 @@
+/*
+$primary: light-gray;
+$background: gray;
+$link: $primary;
+$text: red;
+$text-strong: pink;
+$text-light: $text-strong;
+$dark: $text-strong;
+*/
+
+@import "bulma/bulma";
+
+html, body {
+  background-color: $background;
+  height: 100%;
+}
+
+.navbar {
+  background-color: $background;
+}

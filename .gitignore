@@ -1,5 +1,13 @@
+# Python/Django stuff
+staticfiles
 venv
 *.pyc
-staticfiles
-.env
 *.sqlite3
+
+# Node/JavaScript stuff
+*.css
+.sass-cache
+node_modules
+
+# Environment stuff
+.vscode

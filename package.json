@@ -1,0 +1,26 @@
+{
+  "name": "my-site",
+  "version": "1.0.0",
+  "description": "An utterly fantastic project starter template for Django 1.11.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "bulma": "^0.5.2",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evandam/my-site.git"
+  },
+  "author": "Evan Van Dam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evandam/my-site/issues"
+  },
+  "homepage": "https://github.com/evandam/my-site#readme"
+}
