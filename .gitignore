@@ -11,3 +11,4 @@ node_modules
 
 # Environment stuff
 .vscode
+.idea
