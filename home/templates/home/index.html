@@ -1,35 +1,39 @@
 {% extends 'base.html' %}
 {% block content %}
-  <section class="section">
-    <div class="container">
-      <h1 class="title">Hi, I'm Evan</h1>
-      <div class="content">
-        <p class="subtitle">
-          <figure class="image is-64x64 profile">
-            <img src="/static/img/profile_cropped.jpg">
-          </figure>
-          I'm a data engineer with a passion for application development.
-          I like writing clean and efficient code to solve complex problems.
+<section class="hero is-primary">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">Hi, I'm Evan</h1>
+            <h2 class="subtitle columns is-vcentered">
+                <div class="column is-narrow">
+                    <figure class="image is-128x128">
+                        <img src="/static/img/profile_cropped.jpg" class="is-circle">
+                    </figure>
+                </div>
+                <div class="column">
+                    I'm a data engineer with a passion for application development.
+                    I like writing clean and efficient code to solve complex problems.
+                </div>
+            </h2>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="content">
+        <p>
+            I studied Computer Science at Marist College with a minor in Information Technology,
+            and a concentration in Game Design and Programming.
+            I held a job on campus as a student developer, working on projects like
+            applying responsive web design to our student web portal.
         </p>
         <p>
-          I studied Computer Science at Marist College with a minor in Information Technology,
-          and a concentration in Game Design and Programming.
-          I held a job on campus as a student developer, working on projects like
-          applying responsive web design to our student web portal.
+            I then went through the Ops, Tech, and Data Leadership Development Program at The Hartford.
+            Through this program, I gained experience as an app developer, technical analyst, web developer,
+            and data engineer.
+            At the end of the program, I joined the Big Data & Analytics team full-time as a data engineer.
+            I currently work heavily with Linux shell scripting, Python development, and big data tools like
+            Hadoop, Apache Spark, and Tableau for data visualization.
         </p>
-        <p>
-          I then went through the Ops, Tech, and Data Leadership Development Program at The Hartford.
-          Through this program, I gained experience as an app developer, technical analyst, web developer,
-          and data engineer.
-          At the end of the program, I joined the Big Data & Analytics team full-time as a data engineer.
-          I currently work heavily with Linux shell scripting, Python development, and big data tools like
-          Hadoop, Apache Spark, and Tableau for data visualization.
-        </p>
-      </div>
     </div>
-  </section>
-  <section class="section">
-    <div class="container">
-    </div>
-  </section>
+</section>
 {% endblock %}
